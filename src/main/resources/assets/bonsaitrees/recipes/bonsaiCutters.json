@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        " IW",
+        "SCI",
+        " S "
+    ],
+   
+    "key":
+    {
+        "S":
+        {
+            "item": "minecraft:stick"
+        },
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "W":
+        {
+            "item": "minecraft:string"
+        },
+        "C":
+        {
+            "item": "minecraft:stone",
+            "data": 0
+        }
+    },
+   
+    "result":
+    {
+        "item": "bonsaitrees:bonsai_cutters",
+        "count": 1
+    }
+}

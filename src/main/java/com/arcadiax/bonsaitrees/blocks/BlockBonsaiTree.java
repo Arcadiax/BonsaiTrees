@@ -1,6 +1,5 @@
 package com.arcadiax.bonsaitrees.blocks;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -39,12 +38,13 @@ public class BlockBonsaiTree extends BlockCrops {
 		ModBlocks.AddBlock(getUnlocalizedName(), this);
 	}
 
+	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand,
 			EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if (!worldIn.isRemote) {
 			if (this.isMaxAge(state)) {
 				for(Integer i = 0; i < _drops.length; i++) {
-					worldIn.spawnEntityInWorld(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),
+					worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(),
 							new ItemStack(ModItems.GetItem(_drops[i].name), _drops[i].count)));
 				}
 				worldIn.setBlockState(pos, this.withAge(0));
@@ -52,16 +52,6 @@ public class BlockBonsaiTree extends BlockCrops {
 			}
 		}
 		return false;
-	}
-	
-	@Override
-    public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune){
-		List<ItemStack> sendDrops = new ArrayList<ItemStack>();
-		for(Integer i = 0; i < _drops.length; i++) {
-			sendDrops.add(new ItemStack(ModItems.GetItem(_drops[i].name), _drops[i].count));
-		}
-		
-		return sendDrops;
 	}
 
 	protected Item getSeed() {

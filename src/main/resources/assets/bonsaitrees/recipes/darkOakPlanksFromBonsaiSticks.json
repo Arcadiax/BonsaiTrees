@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RR ",
+        "RR ",
+        "   "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "bonsaitrees:bonsai_darkoak_cutting"
+        }
+    },
+   
+    "result":
+    {
+        "item": "minecraft:planks",
+		"data": 5,
+        "count": 1
+    }
+}

@@ -8,9 +8,7 @@ import com.arcadiax.bonsaitrees.util.Reference;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
@@ -21,12 +19,11 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class ItemBonsaiSapling extends ItemSeeds implements IHasModel, IPlantable {
+public class ItemBonsaiSapling extends Item implements IHasModel, IPlantable {
 	
 	private String _plant;
 	
 	public ItemBonsaiSapling(String name, String plant) {
-		super(ModBlocks.GetBlock(plant), Blocks.FARMLAND);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Reference.BASE_CREATIVE_TAB);
@@ -40,7 +37,7 @@ public class ItemBonsaiSapling extends ItemSeeds implements IHasModel, IPlantabl
 		
 		if(facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this) && worldIn.isAirBlock(pos.up())) {
 			worldIn.setBlockState(pos.up(), getPlant(worldIn, pos.up()));
-			stack.stackSize -= 1;
+			stack.shrink(1);
 			return EnumActionResult.SUCCESS;
 		}
 		

@@ -4,7 +4,6 @@ import java.util.HashSet;
 
 import com.arcadiax.bonsaitrees.init.ModBlocks;
 import com.arcadiax.bonsaitrees.init.ModItems;
-import com.arcadiax.bonsaitrees.init.ModRecipes;
 import com.arcadiax.bonsaitrees.proxy.CommonProxy;
 import com.arcadiax.bonsaitrees.util.Reference;
 
@@ -45,7 +44,7 @@ public class Main {
 	
 	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
-		ModRecipes.init();
+		
 	}
 	
 	@EventHandler
