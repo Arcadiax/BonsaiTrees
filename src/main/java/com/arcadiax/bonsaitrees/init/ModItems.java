@@ -8,11 +8,13 @@ import java.util.Map;
 import com.arcadiax.bonsaitrees.item.ItemBase;
 import com.arcadiax.bonsaitrees.item.ItemBonsaiSapling;
 import com.arcadiax.bonsaitrees.item.ItemCraftTool;
+import com.arcadiax.bonsaitrees.item.ItemOreDict;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
@@ -49,6 +51,14 @@ public class ModItems {
 			return ITEMS_MAP.get(name);
 		} else {
 			return null;
+		}
+	}
+	
+	public static void registerOreDict() {
+		for(Item i : ITEMS) {
+			if (i instanceof ItemOreDict) {
+				((ItemOreDict)i).initOreDict();
+			}
 		}
 	}
 	
