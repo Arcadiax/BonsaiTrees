@@ -1,0 +1,50 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "cross"
+	},
+	"variants": {
+		"age": {
+			"0": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle0"
+				}
+			},
+			"1": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle1"
+				}
+			},
+			"2": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle2"
+				}
+			},
+			"3": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle3"
+				}
+			},
+			"4": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle4"
+				}
+			},
+			"5": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle5"
+				}
+			},
+			"6": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle6"
+				}
+			},
+			"7": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_jungle/bonsai_jungle7"
+				}
+			}
+		}
+	}
+}

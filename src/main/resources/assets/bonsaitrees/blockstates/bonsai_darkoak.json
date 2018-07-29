@@ -1,0 +1,50 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "cross"
+	},
+	"variants": {
+		"age": {
+			"0": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak0"
+				}
+			},
+			"1": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak1"
+				}
+			},
+			"2": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak2"
+				}
+			},
+			"3": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak3"
+				}
+			},
+			"4": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak4"
+				}
+			},
+			"5": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak5"
+				}
+			},
+			"6": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak6"
+				}
+			},
+			"7": {
+				"textures": {
+					"cross": "bonsaitrees:blocks/bonsai_darkoak/bonsai_darkoak7"
+				}
+			}
+		}
+	}
+}
