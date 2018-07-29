@@ -8,6 +8,7 @@ import java.util.Map;
 import com.arcadiax.bonsaitrees.item.ItemBase;
 import com.arcadiax.bonsaitrees.item.ItemBonsaiSapling;
 import com.arcadiax.bonsaitrees.item.ItemCraftTool;
+import com.arcadiax.bonsaitrees.item.ItemOreDict;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -52,6 +53,11 @@ public class ModItems {
 		}
 	}
 	
-	//Basic Items
-		//public static final Item BASEITEM = new ItemBase("baseitem");
+	public static void registerOreDict() {
+		for(Item i : ITEMS) {
+			if (i instanceof ItemOreDict) {
+				((ItemOreDict)i).initOreDict();
+			}
+		}
+	}
 }

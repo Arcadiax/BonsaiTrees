@@ -19,6 +19,7 @@ public class RegistryHandler {
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
+		ModItems.registerOreDict();
 	}
 	
 	@SubscribeEvent
@@ -37,16 +38,6 @@ public class RegistryHandler {
 		for(Item item : ModItems.ITEMS) {
 			if(item instanceof IHasModel) {
 				((IHasModel)item).RegisterModels();
-			}
-		}
-		
-		for(Item item : ModItems.ITEMS) {
-			if(item instanceof ItemBase) {
-				ItemBase ib = (ItemBase)item;
-				if(ib != null) {
-					if(ib.oreDict != "")
-						OreDictionary.registerOre(ib.oreDict, ib);
-				}
 			}
 		}
 	}

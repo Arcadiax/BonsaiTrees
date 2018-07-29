@@ -7,8 +7,9 @@ import com.arcadiax.bonsaitrees.util.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.oredict.OreDictionary;
 
-public class ItemBase extends Item implements IHasModel {
+public class ItemBase extends Item implements IHasModel, ItemOreDict {
 	
 	public String oreDict = "";
 	
@@ -31,6 +32,12 @@ public class ItemBase extends Item implements IHasModel {
 	@Override
 	public void RegisterModels() {
 		Main.proxy.registerItemRenderer(this, 0, "inventory");
+	}
+
+	@Override
+	public void initOreDict() {
+		if(oreDict != "")
+			OreDictionary.registerOre(oreDict, this);
 	}
 	
 }
