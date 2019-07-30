@@ -1,22 +1,15 @@
 package com.arcadiax.bonsaitrees;
 
-import java.util.HashSet;
-
 import com.arcadiax.bonsaitrees.init.ModBlocks;
 import com.arcadiax.bonsaitrees.init.ModItems;
 import com.arcadiax.bonsaitrees.proxy.CommonProxy;
 import com.arcadiax.bonsaitrees.util.Reference;
 
-import blusunrize.immersiveengineering.api.ComparableItemStack;
 import blusunrize.immersiveengineering.api.tool.BelljarHandler;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockCrops;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -25,8 +18,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod(modid=Reference.MODID, name=Reference.NAME, version=Reference.VERSION)
 public class Main {
