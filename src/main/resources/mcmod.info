@@ -1,9 +1,9 @@
 [
 {
-  "modid": "bonsaitrees",
+  "modid": "arcadialbonsaitrees",
   "name": "Bonsai Trees",
   "description": "Crop-like trees for easier wood farming!",
-  "version": "1.0",
+  "version": "1.2.1",
   "mcversion": "1.10.2",
   "url": "https://minecraft.curseforge.com/projects/bonsai-tree-crops",
   "updateUrl": "",
